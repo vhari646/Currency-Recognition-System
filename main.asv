@@ -1,0 +1,42 @@
+clc;clear all;close all;
+rgbImage=imread('.jpg');     %input currency image 
+figure;imshow(rgbImage,[]);title('original')
+croppedImage=cropping(rgbImage); 
+im=imresize(croppedImage,[128 256]);
+fet=totalfeature(im);
+im=rgb2gray(im);
+figure;imshow(im,[]);
+load db;
+for i=1:length(db)
+% for i=2
+     Q(i)=dist(fet(4:14)',db(i).fet(4:14));
+end 
+% Q=dist(fet',db(2).fet)
+[dist,index]=min(Q);
+display(Q);
+if dist<0.67
+%     index=3
+    J=db(index).pattern;
+    figure,imshow(J(:,:));title('db');
+    p=correlation(im,J);                         
+    bw=~im2bw(p,db(index).threshold);
+    figure;imshow(bw);title('bw');
+    num=findpoint(bw);
+    display(num);
+    pbw=~im2bw(J,db(index).threshold);
+    figure;imshow(pbw);title('pbw');
+    value=findpoint(pbw);
+    display(value);
+    diff=abs(num-value);
+    display(diff);
+    if diff<=14
+        name=db(index).name;
+        fprintf('currency is ');
+        display(name);
+    else
+        fprintf('no match currency ');
+    end
+else 
+    fprintf('no match currency ');
+end
+    
