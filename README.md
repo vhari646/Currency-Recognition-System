@@ -24,4 +24,13 @@ f. With pattern.m we finally perform pattern matching to make sure it matches th
 ## Image Pre-Processing
 ![1](https://user-images.githubusercontent.com/39281308/56232017-1c656c00-6080-11e9-851b-25ed212bd044.PNG)
 
+## Colour Extraction
+![2](https://user-images.githubusercontent.com/39281308/56232223-8b42c500-6080-11e9-8945-1976f7b83e98.PNG)
 
+## Edge Detection
+
+## Pattern Matching
+
+## System Implementation
+
+## Result
