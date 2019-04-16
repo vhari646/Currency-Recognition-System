@@ -29,10 +29,16 @@ f. With pattern.m we finally perform pattern matching to make sure it matches th
 
 ## Edge Detection
 ![3](https://user-images.githubusercontent.com/39281308/56232237-90077900-6080-11e9-82af-f5478f2833f0.PNG)
+
 ![4](https://user-images.githubusercontent.com/39281308/56232242-93026980-6080-11e9-9d34-9f9b2f14cd7a.PNG)
+
 ![5](https://user-images.githubusercontent.com/39281308/56232246-95fd5a00-6080-11e9-9476-6b7be5e54330.PNG)
+
 ## Pattern Matching
+![6](https://user-images.githubusercontent.com/39281308/56232247-985fb400-6080-11e9-98a4-977283197a8b.PNG)
 
 ## System Implementation
+![7](https://user-images.githubusercontent.com/39281308/56232250-9990e100-6080-11e9-9276-7a6cbe08d829.PNG)
 
 ## Result
+![8](https://user-images.githubusercontent.com/39281308/56232256-9b5aa480-6080-11e9-86e5-16e0383a21cc.PNG)
